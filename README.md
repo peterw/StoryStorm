@@ -1,5 +1,5 @@
 # Story Storm
-We got a treat for you! Introducing Story Storm, a powerful tool that harnesses the power of OpenAI's GPT-3.5 Turbo API to generate fascinating and engaging stories.
+Introducing Story Storm, a powerful tool that harnesses the power of OpenAI's GPT-3.5 Turbo API to generate fascinating and engaging stories.
 But we didn't stop there! We wanted to make your story experience even more immersive. That's why we've also integrated the Eleven Labs API to convert your generated story into an audio narration.
 And that's not all! We've also incorporated the replicate API to generate accompanying images for your story. So now, as you listen, you can also see vivid depictions of the story's characters and settings.
 
@@ -7,7 +7,7 @@ And that's not all! We've also incorporated the replicate API to generate accomp
 To get started, clone the repository and install the required dependencies:
 
 
-```git clone https://github.com/your-username/story-storm.git```
+```git clone https://github.com/peterw/StoryStorm.git```
 
 ```cd Story_storm```
 

@@ -11,13 +11,10 @@ from langchain.llms import OpenAI
 
 load_dotenv()
 
-# Set your API keys
 openai_api_key = os.getenv("OPENAI_API_KEY")
 eleven_api_key = os.getenv("ELEVEN_API_KEY")
 
-# Initialize OpenAI model
 llm = OpenAI(temperature=0.9)
-
 
 def generate_story(text):
     """Generate a story using the langchain library and OpenAI's GPT-3 model."""
@@ -46,11 +43,9 @@ def generate_images(story_text):
     return output
 
 
-# Streamlit app
 def app():
     st.title("Story Storm")
 
-    # Form inputs
     with st.form(key='my_form'):
         text = st.text_input(
             "Enter a word to generate a story",
@@ -62,13 +57,10 @@ def app():
         voice = st.selectbox("Select a voice", options)
 
         if st.form_submit_button("Submit"):
-            # Show a spinner
             with st.spinner('Generating story...'):
-                # Generate story and audio
                 story_text = generate_story(text)
                 audio = generate_audio(story_text, voice)
 
-            # Display audio and images
             st.audio(audio, format='audio/mp3')
             images = generate_images(story_text)
             for item in images:
