@@ -16,34 +16,12 @@ To get started, clone the repository and install the required dependencies:
 ## Prerequisites
 You will need to set up API keys for[OpenAI](https://platform.openai.com/account/api-keys),[Eleven Labs ](https://beta.elevenlabs.io/speech-synthesis) [Replicate](https://replicate.com/account/api-tokens). 
 
-### Windows
-```setx OPENAI_API_KEY <your_openai_api_key>```
-
-```setx ELEVEN_API_KEY <your_eleven_labs_api_key>```
-
-```setx REPLICATE_API_KEY <your_replicate_api_key>```
-### Linux and Mac
-```export OPENAI_API_KEY=<your_openai_api_key>```
-
-```export ELEVEN_API_KEY=<your_eleven_labs_api_key>```
-
-```export REPLICATE_API_KEY=<your_replicate_api_key>```
-
 ## Usage
 To run the program, simply run the following command in the terminal:
 
-```streamlit run main.py --server.port 8080```
+```streamlit run chat.py```
 
 Then enter a word and select a voice to generate a story.
-
-## Credits
-This project uses the following libraries:
-
-1. langchain
-2. streamlit
-3. dotenv
-4. elevenlabs
-5. replicate
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
