@@ -1,5 +1,6 @@
 replicate
 langchain
 elevenlabs
-dotenv
+python-dotenv
 streamlit
+openai
