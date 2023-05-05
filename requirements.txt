@@ -1,0 +1,5 @@
+replicate
+langchain
+elevenlabs
+dotenv
+streamlit
